@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F206B9A61E7E2D54002FF59C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206B9A51E7E2D54002FF59C /* TabBarController.swift */; };
+		F206B9A81E7EFF12002FF59C /* GCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206B9A71E7EFF12002FF59C /* GCView.swift */; };
+		F206B9AC1E7F7524002FF59C /* GCTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206B9AB1E7F7524002FF59C /* GCTV.swift */; };
+		F206B9AE1E7F764A002FF59C /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206B9AD1E7F764A002FF59C /* store.swift */; };
+		F206B9B01E821B27002FF59C /* Acq.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206B9AF1E821B27002FF59C /* Acq.swift */; };
+		F26F66A01E67CFF700236203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F669F1E67CFF700236203 /* AppDelegate.swift */; };
+		F26F66A21E67CFF700236203 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26F66A11E67CFF700236203 /* GameScene.sks */; };
+		F26F66A41E67CFF700236203 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F26F66A31E67CFF700236203 /* Actions.sks */; };
+		F26F66A61E67CFF700236203 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F66A51E67CFF700236203 /* GameScene.swift */; };
+		F26F66A81E67CFF700236203 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F66A71E67CFF700236203 /* GameViewController.swift */; };
+		F26F66AB1E67CFF700236203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26F66A91E67CFF700236203 /* Main.storyboard */; };
+		F26F66AD1E67CFF700236203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26F66AC1E67CFF700236203 /* Assets.xcassets */; };
+		F26F66B01E67CFF700236203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26F66AE1E67CFF700236203 /* LaunchScreen.storyboard */; };
+		F26F66B81E67D06C00236203 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26F66B71E67D06C00236203 /* ButtonNode.swift */; };
+		F26F66DB1E691A4800236203 /* 10x.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66C71E691A4800236203 /* 10x.m4a */; };
+		F26F66DC1E691A4800236203 /* average_is_a_failing_formula.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66C81E691A4800236203 /* average_is_a_failing_formula.m4a */; };
+		F26F66DD1E691A4800236203 /* be_great.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66C91E691A4800236203 /* be_great.m4a */; };
+		F26F66DF1E691A4800236203 /* dont_be_a_dummy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66CB1E691A4800236203 /* dont_be_a_dummy.m4a */; };
+		F26F66E01E691A4800236203 /* dont_bitch_out.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66CC1E691A4800236203 /* dont_bitch_out.m4a */; };
+		F26F66E11E691A4800236203 /* every_problem_you_have.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66CD1E691A4800236203 /* every_problem_you_have.m4a */; };
+		F26F66E21E691A4800236203 /* feed_the_beast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66CE1E691A4800236203 /* feed_the_beast.m4a */; };
+		F26F66E31E691A4800236203 /* get_your_money_right.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66CF1E691A4800236203 /* get_your_money_right.m4a */; };
+		F26F66E41E691A4800236203 /* grown_up_money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D01E691A4800236203 /* grown_up_money.m4a */; };
+		F26F66E51E691A4800236203 /* how_far_you_have_come.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D11E691A4800236203 /* how_far_you_have_come.m4a */; };
+		F26F66E61E691A4800236203 /* keep_your_attention_on_goals.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D21E691A4800236203 /* keep_your_attention_on_goals.m4a */; };
+		F26F66E71E691A4800236203 /* make_money_or_make_excuses.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D31E691A4800236203 /* make_money_or_make_excuses.m4a */; };
+		F26F66E81E691A4800236203 /* no_excuses.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D41E691A4800236203 /* no_excuses.m4a */; };
+		F26F66E91E691A4800236203 /* pay_the_price_today.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D51E691A4800236203 /* pay_the_price_today.m4a */; };
+		F26F66EA1E691A4800236203 /* success_is_your_duty.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D61E691A4800236203 /* success_is_your_duty.m4a */; };
+		F26F66EB1E691A4800236203 /* they_hatin_on_you.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D71E691A4800236203 /* they_hatin_on_you.m4a */; };
+		F26F66EC1E691A4800236203 /* tired_of_baby_money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D81E691A4800236203 /* tired_of_baby_money.m4a */; };
+		F26F66ED1E691A4800236203 /* whose_got_my_money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66D91E691A4800236203 /* whose_got_my_money.m4a */; };
+		F26F66EE1E691A4800236203 /* you_aint_got_a_problem.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F26F66DA1E691A4800236203 /* you_aint_got_a_problem.m4a */; };
+		F2F2C13A1E739CC2006FE552 /* better_than_everyone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F2F2C1391E739CC2006FE552 /* better_than_everyone.m4a */; };
+		F2F2C13C1E73A0AB006FE552 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = F2F2C13B1E73A0AB006FE552 /* click.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F206B9A51E7E2D54002FF59C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F206B9A71E7EFF12002FF59C /* GCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCView.swift; sourceTree = "<group>"; };
+		F206B9AB1E7F7524002FF59C /* GCTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCTV.swift; sourceTree = "<group>"; };
+		F206B9AD1E7F764A002FF59C /* store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
+		F206B9AF1E821B27002FF59C /* Acq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acq.swift; sourceTree = "<group>"; };
+		F26F669C1E67CFF700236203 /* TenX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26F669F1E67CFF700236203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F26F66A11E67CFF700236203 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F26F66A31E67CFF700236203 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F26F66A51E67CFF700236203 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F26F66A71E67CFF700236203 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F26F66AA1E67CFF700236203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26F66AC1E67CFF700236203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26F66AF1E67CFF700236203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26F66B11E67CFF700236203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26F66B71E67D06C00236203 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		F26F66C71E691A4800236203 /* 10x.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10x.m4a; sourceTree = "<group>"; };
+		F26F66C81E691A4800236203 /* average_is_a_failing_formula.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = average_is_a_failing_formula.m4a; sourceTree = "<group>"; };
+		F26F66C91E691A4800236203 /* be_great.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = be_great.m4a; sourceTree = "<group>"; };
+		F26F66CB1E691A4800236203 /* dont_be_a_dummy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dont_be_a_dummy.m4a; sourceTree = "<group>"; };
+		F26F66CC1E691A4800236203 /* dont_bitch_out.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dont_bitch_out.m4a; sourceTree = "<group>"; };
+		F26F66CD1E691A4800236203 /* every_problem_you_have.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = every_problem_you_have.m4a; sourceTree = "<group>"; };
+		F26F66CE1E691A4800236203 /* feed_the_beast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = feed_the_beast.m4a; sourceTree = "<group>"; };
+		F26F66CF1E691A4800236203 /* get_your_money_right.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = get_your_money_right.m4a; sourceTree = "<group>"; };
+		F26F66D01E691A4800236203 /* grown_up_money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = grown_up_money.m4a; sourceTree = "<group>"; };
+		F26F66D11E691A4800236203 /* how_far_you_have_come.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = how_far_you_have_come.m4a; sourceTree = "<group>"; };
+		F26F66D21E691A4800236203 /* keep_your_attention_on_goals.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep_your_attention_on_goals.m4a; sourceTree = "<group>"; };
+		F26F66D31E691A4800236203 /* make_money_or_make_excuses.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = make_money_or_make_excuses.m4a; sourceTree = "<group>"; };
+		F26F66D41E691A4800236203 /* no_excuses.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = no_excuses.m4a; sourceTree = "<group>"; };
+		F26F66D51E691A4800236203 /* pay_the_price_today.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pay_the_price_today.m4a; sourceTree = "<group>"; };
+		F26F66D61E691A4800236203 /* success_is_your_duty.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success_is_your_duty.m4a; sourceTree = "<group>"; };
+		F26F66D71E691A4800236203 /* they_hatin_on_you.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = they_hatin_on_you.m4a; sourceTree = "<group>"; };
+		F26F66D81E691A4800236203 /* tired_of_baby_money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tired_of_baby_money.m4a; sourceTree = "<group>"; };
+		F26F66D91E691A4800236203 /* whose_got_my_money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = whose_got_my_money.m4a; sourceTree = "<group>"; };
+		F26F66DA1E691A4800236203 /* you_aint_got_a_problem.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = you_aint_got_a_problem.m4a; sourceTree = "<group>"; };
+		F2F2C1391E739CC2006FE552 /* better_than_everyone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = better_than_everyone.m4a; sourceTree = "<group>"; };
+		F2F2C13B1E73A0AB006FE552 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26F66991E67CFF700236203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F206B9B11E821D9F002FF59C /* WebViews */ = {
+			isa = PBXGroup;
+			children = (
+				F206B9AB1E7F7524002FF59C /* GCTV.swift */,
+				F206B9AD1E7F764A002FF59C /* store.swift */,
+				F206B9A71E7EFF12002FF59C /* GCView.swift */,
+				F206B9AF1E821B27002FF59C /* Acq.swift */,
+			);
+			name = WebViews;
+			sourceTree = "<group>";
+		};
+		F26F66931E67CFF700236203 = {
+			isa = PBXGroup;
+			children = (
+				F26F669E1E67CFF700236203 /* TenX */,
+				F26F669D1E67CFF700236203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26F669D1E67CFF700236203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26F669C1E67CFF700236203 /* TenX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26F669E1E67CFF700236203 /* TenX */ = {
+			isa = PBXGroup;
+			children = (
+				F206B9B11E821D9F002FF59C /* WebViews */,
+				F26F669F1E67CFF700236203 /* AppDelegate.swift */,
+				F26F66A11E67CFF700236203 /* GameScene.sks */,
+				F26F66A51E67CFF700236203 /* GameScene.swift */,
+				F26F66A31E67CFF700236203 /* Actions.sks */,
+				F206B9A51E7E2D54002FF59C /* TabBarController.swift */,
+				F26F66B71E67D06C00236203 /* ButtonNode.swift */,
+				F26F66A71E67CFF700236203 /* GameViewController.swift */,
+				F26F66A91E67CFF700236203 /* Main.storyboard */,
+				F26F66AC1E67CFF700236203 /* Assets.xcassets */,
+				F26F66C61E691A4800236203 /* Sounds */,
+				F26F66AE1E67CFF700236203 /* LaunchScreen.storyboard */,
+				F26F66B11E67CFF700236203 /* Info.plist */,
+			);
+			path = TenX;
+			sourceTree = "<group>";
+		};
+		F26F66C61E691A4800236203 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F2F2C13B1E73A0AB006FE552 /* click.wav */,
+				F26F66C71E691A4800236203 /* 10x.m4a */,
+				F26F66C81E691A4800236203 /* average_is_a_failing_formula.m4a */,
+				F26F66C91E691A4800236203 /* be_great.m4a */,
+				F2F2C1391E739CC2006FE552 /* better_than_everyone.m4a */,
+				F26F66CB1E691A4800236203 /* dont_be_a_dummy.m4a */,
+				F26F66CC1E691A4800236203 /* dont_bitch_out.m4a */,
+				F26F66CD1E691A4800236203 /* every_problem_you_have.m4a */,
+				F26F66CE1E691A4800236203 /* feed_the_beast.m4a */,
+				F26F66CF1E691A4800236203 /* get_your_money_right.m4a */,
+				F26F66D01E691A4800236203 /* grown_up_money.m4a */,
+				F26F66D11E691A4800236203 /* how_far_you_have_come.m4a */,
+				F26F66D21E691A4800236203 /* keep_your_attention_on_goals.m4a */,
+				F26F66D31E691A4800236203 /* make_money_or_make_excuses.m4a */,
+				F26F66D41E691A4800236203 /* no_excuses.m4a */,
+				F26F66D51E691A4800236203 /* pay_the_price_today.m4a */,
+				F26F66D61E691A4800236203 /* success_is_your_duty.m4a */,
+				F26F66D71E691A4800236203 /* they_hatin_on_you.m4a */,
+				F26F66D81E691A4800236203 /* tired_of_baby_money.m4a */,
+				F26F66D91E691A4800236203 /* whose_got_my_money.m4a */,
+				F26F66DA1E691A4800236203 /* you_aint_got_a_problem.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26F669B1E67CFF700236203 /* TenX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26F66B41E67CFF700236203 /* Build configuration list for PBXNativeTarget "TenX" */;
+			buildPhases = (
+				F26F66981E67CFF700236203 /* Sources */,
+				F26F66991E67CFF700236203 /* Frameworks */,
+				F26F669A1E67CFF700236203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenX;
+			productName = TenX;
+			productReference = F26F669C1E67CFF700236203 /* TenX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26F66941E67CFF700236203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Broski Studios";
+				TargetAttributes = {
+					F26F669B1E67CFF700236203 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2T6B5WZ44S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F26F66971E67CFF700236203 /* Build configuration list for PBXProject "TenX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26F66931E67CFF700236203;
+			productRefGroup = F26F669D1E67CFF700236203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26F669B1E67CFF700236203 /* TenX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26F669A1E67CFF700236203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26F66E31E691A4800236203 /* get_your_money_right.m4a in Resources */,
+				F26F66E51E691A4800236203 /* how_far_you_have_come.m4a in Resources */,
+				F26F66E41E691A4800236203 /* grown_up_money.m4a in Resources */,
+				F26F66E21E691A4800236203 /* feed_the_beast.m4a in Resources */,
+				F26F66DC1E691A4800236203 /* average_is_a_failing_formula.m4a in Resources */,
+				F26F66DB1E691A4800236203 /* 10x.m4a in Resources */,
+				F26F66E01E691A4800236203 /* dont_bitch_out.m4a in Resources */,
+				F26F66E11E691A4800236203 /* every_problem_you_have.m4a in Resources */,
+				F26F66AB1E67CFF700236203 /* Main.storyboard in Resources */,
+				F2F2C13A1E739CC2006FE552 /* better_than_everyone.m4a in Resources */,
+				F26F66EC1E691A4800236203 /* tired_of_baby_money.m4a in Resources */,
+				F26F66A21E67CFF700236203 /* GameScene.sks in Resources */,
+				F26F66E91E691A4800236203 /* pay_the_price_today.m4a in Resources */,
+				F26F66AD1E67CFF700236203 /* Assets.xcassets in Resources */,
+				F26F66DD1E691A4800236203 /* be_great.m4a in Resources */,
+				F26F66E71E691A4800236203 /* make_money_or_make_excuses.m4a in Resources */,
+				F26F66E81E691A4800236203 /* no_excuses.m4a in Resources */,
+				F26F66ED1E691A4800236203 /* whose_got_my_money.m4a in Resources */,
+				F26F66EB1E691A4800236203 /* they_hatin_on_you.m4a in Resources */,
+				F2F2C13C1E73A0AB006FE552 /* click.wav in Resources */,
+				F26F66DF1E691A4800236203 /* dont_be_a_dummy.m4a in Resources */,
+				F26F66E61E691A4800236203 /* keep_your_attention_on_goals.m4a in Resources */,
+				F26F66B01E67CFF700236203 /* LaunchScreen.storyboard in Resources */,
+				F26F66EA1E691A4800236203 /* success_is_your_duty.m4a in Resources */,
+				F26F66EE1E691A4800236203 /* you_aint_got_a_problem.m4a in Resources */,
+				F26F66A41E67CFF700236203 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26F66981E67CFF700236203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F206B9B01E821B27002FF59C /* Acq.swift in Sources */,
+				F206B9A81E7EFF12002FF59C /* GCView.swift in Sources */,
+				F26F66A61E67CFF700236203 /* GameScene.swift in Sources */,
+				F206B9AC1E7F7524002FF59C /* GCTV.swift in Sources */,
+				F206B9AE1E7F764A002FF59C /* store.swift in Sources */,
+				F26F66B81E67D06C00236203 /* ButtonNode.swift in Sources */,
+				F26F66A81E67CFF700236203 /* GameViewController.swift in Sources */,
+				F206B9A61E7E2D54002FF59C /* TabBarController.swift in Sources */,
+				F26F66A01E67CFF700236203 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F26F66A91E67CFF700236203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26F66AA1E67CFF700236203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26F66AE1E67CFF700236203 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26F66AF1E67CFF700236203 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26F66B21E67CFF700236203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F26F66B31E67CFF700236203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26F66B51E67CFF700236203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6B5WZ44S;
+				INFOPLIST_FILE = TenX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BroskiStudios.TenX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F26F66B61E67CFF700236203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T6B5WZ44S;
+				INFOPLIST_FILE = TenX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BroskiStudios.TenX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26F66971E67CFF700236203 /* Build configuration list for PBXProject "TenX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F66B21E67CFF700236203 /* Debug */,
+				F26F66B31E67CFF700236203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26F66B41E67CFF700236203 /* Build configuration list for PBXNativeTarget "TenX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26F66B51E67CFF700236203 /* Debug */,
+				F26F66B61E67CFF700236203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26F66941E67CFF700236203 /* Project object */;
+}

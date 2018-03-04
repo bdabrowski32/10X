@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Sg-6z-vUQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--10X Button-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="TenX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="10X Button" image="button@1x" selectedImage="button@1x" id="ZNg-rs-Yrp"/>
+                    <navigationItem key="navigationItem" id="zJd-Q3-qtY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="69k-PD-ffa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="openMenu:" destination="BV1-FR-VrT" id="02a-NW-I9b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="778"/>
+        </scene>
+        <!--Acquisitions-->
+        <scene sceneID="Wou-hN-8kD">
+            <objects>
+                <viewController title="Acquisitions" id="DZG-9h-uGL" customClass="Acquisitions" customModule="TenX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g8P-1R-VKW"/>
+                        <viewControllerLayoutGuide type="bottom" id="aAO-2s-hST"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QcX-cF-mIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzz-HT-Szm">
+                                <rect key="frame" x="20" y="7" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="goBack:" destination="DZG-9h-uGL" eventType="touchUpInside" id="L8J-sa-FLY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izE-3F-3TT">
+                                <rect key="frame" x="63" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="forwardButton"/>
+                                <connections>
+                                    <action selector="goForward:" destination="qNn-VT-bdT" eventType="touchUpInside" id="ZzS-FU-vwZ"/>
+                                    <action selector="goForward:" destination="DZG-9h-uGL" eventType="touchUpInside" id="ddT-ct-fTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pg-6s-XU1">
+                                <rect key="frame" x="317" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload" image="refresh"/>
+                                <connections>
+                                    <action selector="reload:" destination="qNn-VT-bdT" eventType="touchUpInside" id="Aa3-Zo-H3P"/>
+                                    <action selector="reload:" destination="DZG-9h-uGL" eventType="touchUpInside" id="ZRM-sW-Hpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Acquisitions" image="Icon-App-29x29@1x-1" selectedImage="Icon-App-29x29@1x-1" id="7r0-VK-7cH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVG-mX-tRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034.7826086956522" y="1523.6413043478262"/>
+        </scene>
+        <!--GC.com-->
+        <scene sceneID="8kp-8E-6Qg">
+            <objects>
+                <viewController title="GC.com" id="QxN-oi-Dby" customClass="GCView" customModule="TenX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eoj-bW-SZd"/>
+                        <viewControllerLayoutGuide type="bottom" id="NL0-aC-PHd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ldG-wC-OGf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lvv-8Y-24T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvX-qU-Ryr">
+                                        <rect key="frame" x="317" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Reload" image="refresh"/>
+                                        <connections>
+                                            <action selector="reload:" destination="qNn-VT-bdT" eventType="touchUpInside" id="iYc-P5-Ljn"/>
+                                            <action selector="reload:" destination="QxN-oi-Dby" eventType="touchUpInside" id="wCg-Oj-XD8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0d-JD-bPB">
+                                <rect key="frame" x="20" y="7" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="goBack:" destination="QxN-oi-Dby" eventType="touchUpInside" id="oZu-hT-xqZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-Uo-mwT">
+                                <rect key="frame" x="63" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="forwardButton"/>
+                                <connections>
+                                    <action selector="goForward:" destination="QxN-oi-Dby" eventType="touchUpInside" id="3yB-Pm-T9d"/>
+                                    <action selector="goForward:" destination="qNn-VT-bdT" eventType="touchUpInside" id="lvz-nP-xEu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="GC.com" image="GCTab" selectedImage="GCTab" id="Yjz-YW-Dhg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVw-kw-9fk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="1524"/>
+        </scene>
+        <!--GCTV-->
+        <scene sceneID="JGo-12-kRa">
+            <objects>
+                <viewController id="dMz-Xu-OwL" customClass="GCTVView" customModule="TenX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="grv-bT-2nA"/>
+                        <viewControllerLayoutGuide type="bottom" id="lzF-qn-ep7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wET-x5-mTv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr4-XU-Dvg">
+                                <rect key="frame" x="20" y="7" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="goBack:" destination="dMz-Xu-OwL" eventType="touchUpInside" id="dQ6-XX-xGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37j-8f-Kvi">
+                                <rect key="frame" x="63" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="forwardButton"/>
+                                <connections>
+                                    <action selector="goForward:" destination="qNn-VT-bdT" eventType="touchUpInside" id="87k-t8-5K5"/>
+                                    <action selector="goForward:" destination="dMz-Xu-OwL" eventType="touchUpInside" id="fcC-QE-gxD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxj-Bh-trj">
+                                <rect key="frame" x="317" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload" image="refresh"/>
+                                <connections>
+                                    <action selector="reload:" destination="qNn-VT-bdT" eventType="touchUpInside" id="4cN-aB-h56"/>
+                                    <action selector="reload:" destination="dMz-Xu-OwL" eventType="touchUpInside" id="nAj-af-wid"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="GCTV" image="Icon-App-29x29@1x" selectedImage="Icon-App-29x29@1x" id="Cr0-e9-eN5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UN8-83-j1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="1524"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="5Vt-Sz-NUA">
+            <objects>
+                <viewController id="qNn-VT-bdT" customClass="Store" customModule="TenX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ylR-Ji-5nX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LcZ-5t-BI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xDa-g8-dVs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjn-fg-s1U">
+                                <rect key="frame" x="20" y="7" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="goBack:" destination="qNn-VT-bdT" eventType="touchUpInside" id="qJw-Ph-yT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awi-67-bLd">
+                                <rect key="frame" x="63" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="forwardButton"/>
+                                <connections>
+                                    <action selector="goForward:" destination="qNn-VT-bdT" eventType="touchUpInside" id="WFs-gX-Eth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr3-Pb-7N5">
+                                <rect key="frame" x="317" y="5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload" image="refresh"/>
+                                <connections>
+                                    <action selector="reload:" destination="qNn-VT-bdT" eventType="touchUpInside" id="ljn-h2-kSe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Store" image="bag" selectedImage="bag" id="zJF-9D-jvG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMd-ka-RS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2733" y="1524"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jPl-Ex-9aU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1Sg-6z-vUQ" customClass="TabBarController" customModule="TenX" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wLr-dr-TdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.79607843137254897" green="0.60784313725490191" blue="0.31764705882352939" alpha="1" colorSpace="deviceRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="UJ9-Gj-ME7"/>
+                        <segue destination="QxN-oi-Dby" kind="relationship" relationship="viewControllers" id="i7p-32-hEf"/>
+                        <segue destination="dMz-Xu-OwL" kind="relationship" relationship="viewControllers" id="tGI-lZ-TeF"/>
+                        <segue destination="DZG-9h-uGL" kind="relationship" relationship="viewControllers" id="ugJ-jk-FoU"/>
+                        <segue destination="qNn-VT-bdT" kind="relationship" relationship="viewControllers" id="RRf-gf-smj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPV-SA-pgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="778"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GCTab" width="25" height="25"/>
+        <image name="Icon-App-29x29@1x" width="28" height="28"/>
+        <image name="Icon-App-29x29@1x-1" width="28" height="28"/>
+        <image name="backButton" width="44" height="44"/>
+        <image name="bag" width="25" height="25"/>
+        <image name="button@1x" width="25" height="25"/>
+        <image name="forwardButton" width="44" height="44"/>
+        <image name="refresh" width="512" height="512"/>
+    </resources>
+</document>
